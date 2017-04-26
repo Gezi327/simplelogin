@@ -5,59 +5,71 @@
     <title>simple_login</title>
     <style>
         .control-panel {
-            position: center;
+            position: absolute;
             top: 30px;
+
+            border-style: groove;
+            border-width: 0.001ex;
+            width: 300px;/*元素的宽度*/
+            height:300px;/*元素的高度*/
+            left: 50%;/*配合margin-left的负值实现水平居中*/
+            margin-left: -150px;/*值的大小等于元素宽度的一半*/
+            top:50%;/*配合margin-top的负值实现垂直居中*/
+            margin-top: -150px;
+
 
         }
         .control-entry {
-            width: 280px;
-            background-color: rgba(119, 136, 153, 0.8);
+            position: relative;
+            width: 160px;
+            background-color: rgba(255, 255, 255,0);
             font-family: fantasy, sans-serif;
-            text-align: left;
-            color: white;
-            overflow: auto;
-            padding: 10px;
-            margin-bottom: 10px;
+            color: black;
+            top:20px;
+            left:0px;
+            height:50px;
+
         }
         .control-input {
-            margin-left: 120px;
+            position: relative;
+            margin-left: 30px;
         }
         .control-input input[type="text"] {
+            position: relative;
             width: 160px;
+            left:20px;
         }
         .control-panel label {
-            float: left;
-            width: 120px;
+            position: relative;
+            left:20px;
+            width: 40px;
         }
-        #transfer-panel {
-            position: absolute;
-            background-color: white;
-            max-height: 80%;
-            overflow-y: auto;
-            top: 30px;
-            left: 20px;
-            width: 250px;
-        }
+
+
     </style>
 </head>
 <body>
     <div class="control-panel">
-        <div class="control-entry">
+
+        <div class="control-entry" style="text-align: center">
             <label>账号登陆</label>
         </div>
-        <div class="" >
-            <lable>用户名：</lable>
+
+        <div class="control-entry" >
+            <label>用户名：</label>
             <div class="control-input">
-                <input >
+                <input type="text">
             </div>
         </div>
-        <div>
-            <lable>密码：</lable>
+
+        <div class="control-entry">
+            <label>密码：</label>
             <div class="control-input">
-                <input>
+                <input type="text">
             </div>
         </div>
-        <div>
+
+        <div class="control-entry">
 
         </div>
     </div>
