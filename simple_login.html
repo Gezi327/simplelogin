@@ -19,7 +19,7 @@
 
 
         }
-        .control-entry {
+        .control-entryone {
             position: relative;
             width: 160px;
             background-color: rgba(255, 255, 255,0);
@@ -29,6 +29,17 @@
             left:0px;
             height:50px;
 
+        }
+        .control-entrytwo {
+            position: relative;
+            width: 160px;
+            background-color: rgba(255, 255, 255,0);
+            font-family: fantasy, sans-serif;
+            color: black;
+            top:20px;
+            left:0px;
+            height:50px;
+            display: inline-block;
         }
         .control-input {
             position: relative;
@@ -41,8 +52,9 @@
         }
         .control-panel label {
             position: relative;
-            left:20px;
+            left:50%;
             width: 40px;
+            
         }
 
 
@@ -51,18 +63,18 @@
 <body>
     <div class="control-panel">
 
-        <div class="control-entry" style="text-align: center">
+        <div class="control-entryone" style="text-align: center">
             <label>账号登陆</label>
         </div>
 
-        <div class="control-entry" >
+        <div class="control-entrytwo" >
             <label>用户名：</label>
-            <div class="control-input">
+            <div class="control-input" >
                 <input type="text">
             </div>
         </div>
 
-        <div class="control-entry">
+        <div class="control-entrytwo">
             <label>密码：</label>
             <div class="control-input">
                 <input type="text">
@@ -70,6 +82,7 @@
         </div>
 
         <div class="control-entry">
+            <label>登录</label>
 
         </div>
     </div>
